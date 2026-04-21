@@ -40,7 +40,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin: 1rem 0 1rem 0;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .author img {
@@ -70,4 +70,31 @@ p {
     background-color: hsl(210, 46%, 95%);
     border: none;
     border-radius: 50%;
+    padding: 4px;
+}
+
+.sm-accs {
+    position: absolute;
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    padding: 1rem;
+    gap: 4rem;
+}
+
+.accs {
+    display: flex;
+    gap: 15px;
+}
+
+.accs span {
+    color: hsl(210, 46%, 95%);
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+
+.sm-accs button {
+    background-color: hsl(212, 23%, 69%);
+    border: none;
+    border-radius: 50%;
+    padding: 4px;
 }
