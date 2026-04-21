@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(212, 23%, 69%);
+    font-family: "Manrope", sans-serif;
+}
+
+.table {
+    width: 100%;
+}
+
+.article-box {
+    width: 320px;
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.article-box h1 {
+    margin-top: 1.5rem;
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    font-size: large;
+    padding: 0 0.8rem 0 0.8rem;
+}
+
+.article-box p {
+    margin-top: 0.5rem;
+    color: hsl(214, 17%, 51%);
+    font-size: small;
+    padding: 0.5rem 0.8rem 0 0.8rem;
+}
+
+.about-author {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0 1rem 0;
+    gap: 4rem;
+}
+
+.author img {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.about span,
+p {
+    font-size: small;
+    font-weight: 700;
+}
+
+.author {
+    display: flex;
+    line-height: 0;
+    align-items: center;
+    gap: 10px;
+}
+
+.sm-btn {
+    display: flex;
+    align-items: center;
+}
+
+.sm-btn button {
+    background-color: hsl(210, 46%, 95%);
+    border: none;
+    border-radius: 50%;
+}
