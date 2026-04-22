@@ -105,7 +105,7 @@ body {
     gap: 4rem;
     position: absolute;
     /* bottom: 0.02rem; */
-    left: 0;
+    /* left: 0; */
     bottom: 0;
     /* width: 100%; */
     border-bottom-left-radius: 10px;
@@ -184,7 +184,47 @@ body {
     .about-author {
         gap: 10rem;
     }
+    #revert-btn{
+        display: none;
+    }
+    @media only screen and (min-width:1000px) {
+
+    .sm-accs {
+        display: flex;
+        position: absolute;
+        bottom: 70px;
+        right: 20px;
+        background-color: hsl(217, 19%, 35%);
+        padding: 10px 15px;
+        border-radius: 10px;
+        gap: 15px;
+
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(10px);
+        transition: 0.3s ease;
+        width: auto;
+    }
+
+    .sm-accs.desktop-active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    /* Arrow */
+    .sm-accs::after {
+        content: "";
+        position: absolute;
+        width:50px;
+        height:50px;
+
+        bottom:-8px;
+        right: 25px;
+        border-width: 8px;
+        border-style: solid;
+        border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+    }
+}       
     
-
-
 }
